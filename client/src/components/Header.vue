@@ -8,9 +8,9 @@
         </span>
         </v-toolbar-title>
         <v-toolbar-items>
-            <v-btn 
-                v-if="$store.state.isUserLoggedIn"
-                flat dark>
+            <v-btn
+                flat dark
+                @click="navigateTo({name: 'songs'})">
                 Browse
             </v-btn>
         </v-toolbar-items>
